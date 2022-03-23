@@ -9,7 +9,6 @@ Caso de Teste 01: Pesquisar um produto no site
     Clica no botão Pesquisar
     Conferir se o produto "blouse" foi exibido corretamente
     Clicar na blouse escolhida 
-    Desça a tela
     Colocar no carrinho 
     Clicar em Proceed to checkout
 
