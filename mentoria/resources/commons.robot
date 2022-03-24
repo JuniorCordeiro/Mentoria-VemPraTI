@@ -5,7 +5,8 @@ Library     SeleniumLibrary
 ${BROWSER}      chrome
 ${URL}          http://automationpractice.com/index.php
 
-*** Keywords ***  
+#Steps
+*** Keywords ***
 Acessar a página home do site da loja
     Open Browser    url=${URL}      browser=${BROWSER} 
 
@@ -26,3 +27,13 @@ Colocar no carrinho
 
 Clicar em Proceed to checkout
     Click Link      http://automationpractice.com/index.php?controller=order
+
+Clicar na aba "${texto}"
+    clicar na aba selecionada    ${texto}
+
+
+###Métodos
+clicar na aba selecionada
+    [Arguments]    ${nome_da_aba}
+    Click Element    //*[@id="block_top_menu"]/ul/li[*]/a[contains(.,'${nome_da_aba}')]
+
