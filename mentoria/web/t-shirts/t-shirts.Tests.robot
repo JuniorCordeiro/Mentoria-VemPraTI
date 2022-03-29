@@ -17,6 +17,29 @@ Cenário: Comprar 2 T-shirts
     Clicar em Proceed to checkout
     Clicar na página T-shirts
     Escolha Faded Short Sleeve T-shirts
+    Colocar no carrinho blusa 2
+    Clicar em Proceed to checkout finalizando compra
+    Criar uma conta no site digitando o email "Leticiagraziele@gmail.com"
     Imprima a mensagem na tela
+    
+Cenário: Fazer o cadastro da loja   
+    Selecionar o Title Mrs
+    Colocar primeiro nome "Leticia"
+    Colocar o ultimo nome "Ferreira"
+    Criar uma senha "meuteste"
+    Preencher dados de nascimento 
+    Preencher dados da empresa "Vem pra TI"
+    Preencher dados do endereço " Adelaide avenue"
+    Prencher estado Alabama
+    Preencher estado
+    Prencher Zip/Postal Code "00000"
+    informação adicional "Portao Azul"
+    Preencher telefone "34-3313-2133"
+    Preencher Celular "34-9888-9899"
+    Preencher ponto de referencia "Proximo ao Shopping"
+    Clicar registrar
+
+
+
 
 

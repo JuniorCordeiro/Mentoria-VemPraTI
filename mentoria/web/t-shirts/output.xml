@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.3 (Python 3.10.2 on win32)" generated="20220324 19:53:48.146" rpa="false" schemaversion="2">
+<robot generator="Robot 4.1.3 (Python 3.10.2 on win32)" generated="20220329 19:37:45.753" rpa="false" schemaversion="2">
 <suite id="s1" name="t-shirts.Tests" source="C:\Users\Leticia\Desktop\QAgil\Mentoria-VemPraTI\mentoria\web\t-shirts\t-shirts.Tests.robot">
 <test id="s1-t1" name="Cenário: Pesquisar um produto">
 <kw name="Dado que quero acessar a página home do site da loja" library="t-shirts.Steps">
@@ -7,111 +7,366 @@
 <arg>url=${URL}</arg>
 <arg>browser=${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220324 19:53:48.619" level="INFO">Opening browser 'chrome' to base url 'http://automationpractice.com/index.php'.</msg>
-<status status="PASS" starttime="20220324 19:53:48.619" endtime="20220324 19:53:58.094"/>
+<msg timestamp="20220329 19:37:46.298" level="INFO">Opening browser 'chrome' to base url 'http://automationpractice.com/index.php'.</msg>
+<status status="PASS" starttime="20220329 19:37:46.297" endtime="20220329 19:37:56.619"/>
 </kw>
-<status status="PASS" starttime="20220324 19:53:48.618" endtime="20220324 19:53:58.094"/>
+<status status="PASS" starttime="20220329 19:37:46.295" endtime="20220329 19:37:56.619"/>
 </kw>
 <kw name="E digito o produto &quot;blouse&quot; no campo de pesquisa" library="t-shirts.Steps" sourcename="E digito o produto &quot;${PRODUTO}&quot; no campo de pesquisa">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id=search_query_top</arg>
 <arg>${PRODUTO}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220324 19:53:58.098" level="INFO">Typing text 'blouse' into text field 'id=search_query_top'.</msg>
-<status status="PASS" starttime="20220324 19:53:58.097" endtime="20220324 19:53:58.231"/>
+<msg timestamp="20220329 19:37:56.622" level="INFO">Typing text 'blouse' into text field 'id=search_query_top'.</msg>
+<status status="PASS" starttime="20220329 19:37:56.621" endtime="20220329 19:37:56.761"/>
 </kw>
-<status status="PASS" starttime="20220324 19:53:58.096" endtime="20220324 19:53:58.231"/>
+<status status="PASS" starttime="20220329 19:37:56.620" endtime="20220329 19:37:56.761"/>
 </kw>
 <kw name="Quando clico no botão Pesquisar" library="t-shirts.Steps">
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>${BTN_PESQUISAR}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20220324 19:53:58.235" level="INFO">Clicking button 'css=button.btn.btn-default.button-search'.</msg>
-<status status="PASS" starttime="20220324 19:53:58.234" endtime="20220324 19:54:01.127"/>
+<msg timestamp="20220329 19:37:56.764" level="INFO">Clicking button 'css=button.btn.btn-default.button-search'.</msg>
+<status status="PASS" starttime="20220329 19:37:56.763" endtime="20220329 19:37:59.007"/>
 </kw>
-<status status="PASS" starttime="20220324 19:53:58.233" endtime="20220324 19:54:01.127"/>
+<status status="PASS" starttime="20220329 19:37:56.762" endtime="20220329 19:37:59.007"/>
 </kw>
 <kw name="Então conferiro se o produto &quot;blouse&quot; foi exibido corretamente" library="t-shirts.Steps">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>xpath=//*[@id="center_column"]/ul/li/div/div[1]/div/a[1]/img</arg>
+<arg>css=div.left-block</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220324 19:54:01.129" endtime="20220324 19:54:01.165"/>
+<status status="PASS" starttime="20220329 19:37:59.011" endtime="20220329 19:37:59.069"/>
 </kw>
-<status status="PASS" starttime="20220324 19:54:01.128" endtime="20220324 19:54:01.165"/>
+<status status="PASS" starttime="20220329 19:37:59.010" endtime="20220329 19:37:59.069"/>
 </kw>
-<status status="PASS" starttime="20220324 19:53:48.616" endtime="20220324 19:54:01.166"/>
+<status status="PASS" starttime="20220329 19:37:46.292" endtime="20220329 19:37:59.070"/>
 </test>
 <test id="s1-t2" name="Cenário: Comprar 2 T-shirts">
 <kw name="Clicar na blouse escolhida" library="t-shirts.Steps">
 <kw name="Click Element" library="SeleniumLibrary">
-<arg>xpath=//*[@id="center_column"]/ul/li/div/div[1]/div/a[1]/img</arg>
+<arg>css=div.left-block</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220324 19:54:01.170" level="INFO">Clicking element 'xpath=//*[@id="center_column"]/ul/li/div/div[1]/div/a[1]/img'.</msg>
-<status status="PASS" starttime="20220324 19:54:01.170" endtime="20220324 19:54:03.496"/>
+<msg timestamp="20220329 19:37:59.075" level="INFO">Clicking element 'css=div.left-block'.</msg>
+<status status="PASS" starttime="20220329 19:37:59.074" endtime="20220329 19:38:01.182"/>
 </kw>
-<status status="PASS" starttime="20220324 19:54:01.169" endtime="20220324 19:54:03.496"/>
+<status status="PASS" starttime="20220329 19:37:59.074" endtime="20220329 19:38:01.182"/>
 </kw>
 <kw name="Colocar no carrinho" library="t-shirts.Steps">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath=//*[@id="add_to_cart"]/button</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220324 19:54:03.499" level="INFO">Clicking element 'xpath=//*[@id="add_to_cart"]/button'.</msg>
-<status status="PASS" starttime="20220324 19:54:03.498" endtime="20220324 19:54:03.567"/>
+<msg timestamp="20220329 19:38:01.185" level="INFO">Clicking element 'xpath=//*[@id="add_to_cart"]/button'.</msg>
+<status status="PASS" starttime="20220329 19:38:01.184" endtime="20220329 19:38:01.307"/>
 </kw>
-<status status="PASS" starttime="20220324 19:54:03.497" endtime="20220324 19:54:03.568"/>
+<status status="PASS" starttime="20220329 19:38:01.183" endtime="20220329 19:38:01.307"/>
 </kw>
 <kw name="Clicar em Proceed to checkout" library="t-shirts.Steps">
 <kw name="Click Link" library="SeleniumLibrary">
 <arg>http://automationpractice.com/index.php?controller=order</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<msg timestamp="20220324 19:54:03.570" level="INFO">Clicking link 'http://automationpractice.com/index.php?controller=order'.</msg>
-<status status="PASS" starttime="20220324 19:54:03.569" endtime="20220324 19:54:05.941"/>
+<msg timestamp="20220329 19:38:01.309" level="INFO">Clicking link 'http://automationpractice.com/index.php?controller=order'.</msg>
+<status status="PASS" starttime="20220329 19:38:01.309" endtime="20220329 19:38:04.838"/>
 </kw>
-<status status="PASS" starttime="20220324 19:54:03.569" endtime="20220324 19:54:05.941"/>
+<status status="PASS" starttime="20220329 19:38:01.308" endtime="20220329 19:38:04.838"/>
 </kw>
 <kw name="Clicar na página T-shirts" library="t-shirts.Steps">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath=//*[@id="block_top_menu"]/ul/li[*]/a[contains(.,'T-shirts')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220324 19:54:05.943" level="INFO">Clicking element 'xpath=//*[@id="block_top_menu"]/ul/li[*]/a[contains(.,'T-shirts')]'.</msg>
-<status status="PASS" starttime="20220324 19:54:05.943" endtime="20220324 19:54:08.626"/>
+<msg timestamp="20220329 19:38:04.840" level="INFO">Clicking element 'xpath=//*[@id="block_top_menu"]/ul/li[*]/a[contains(.,'T-shirts')]'.</msg>
+<status status="PASS" starttime="20220329 19:38:04.840" endtime="20220329 19:38:07.449"/>
 </kw>
-<status status="PASS" starttime="20220324 19:54:05.942" endtime="20220324 19:54:08.627"/>
+<status status="PASS" starttime="20220329 19:38:04.839" endtime="20220329 19:38:07.449"/>
 </kw>
 <kw name="Escolha Faded Short Sleeve T-shirts" library="t-shirts.Steps">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath=//*[@id="center_column"]/ul/li/div/div[2]/h5/a</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220324 19:54:08.629" level="INFO">Clicking element 'xpath=//*[@id="center_column"]/ul/li/div/div[2]/h5/a'.</msg>
-<status status="PASS" starttime="20220324 19:54:08.629" endtime="20220324 19:54:10.813"/>
+<msg timestamp="20220329 19:38:07.452" level="INFO">Clicking element 'xpath=//*[@id="center_column"]/ul/li/div/div[2]/h5/a'.</msg>
+<status status="PASS" starttime="20220329 19:38:07.451" endtime="20220329 19:38:09.266"/>
 </kw>
-<status status="PASS" starttime="20220324 19:54:08.628" endtime="20220324 19:54:10.813"/>
+<status status="PASS" starttime="20220329 19:38:07.451" endtime="20220329 19:38:09.266"/>
+</kw>
+<kw name="Colocar no carrinho blusa 2" library="t-shirts.Steps">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="add_to_cart"]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220329 19:38:09.269" level="INFO">Clicking element 'xpath=//*[@id="add_to_cart"]/button'.</msg>
+<status status="PASS" starttime="20220329 19:38:09.268" endtime="20220329 19:38:09.337"/>
+</kw>
+<status status="PASS" starttime="20220329 19:38:09.267" endtime="20220329 19:38:09.338"/>
+</kw>
+<kw name="Clicar em Proceed to checkout finalizando compra" library="t-shirts.Steps">
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>http://automationpractice.com/index.php?controller=order</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220329 19:38:09.340" level="INFO">Clicking link 'http://automationpractice.com/index.php?controller=order'.</msg>
+<status status="PASS" starttime="20220329 19:38:09.339" endtime="20220329 19:38:10.635"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>css=a.button.btn.btn-default.standard-checkout.button-medium</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220329 19:38:10.636" endtime="20220329 19:38:10.666"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css=a.button.btn.btn-default.standard-checkout.button-medium</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220329 19:38:10.666" level="INFO">Clicking element 'css=a.button.btn.btn-default.standard-checkout.button-medium'.</msg>
+<status status="PASS" starttime="20220329 19:38:10.666" endtime="20220329 19:38:14.446"/>
+</kw>
+<status status="PASS" starttime="20220329 19:38:09.338" endtime="20220329 19:38:14.447"/>
+</kw>
+<kw name="Criar uma conta no site digitando o email &quot;Leticiagraziele@gmail.com&quot;" library="t-shirts.Steps" sourcename="Criar uma conta no site digitando o email &quot;${EMAIL}&quot;">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath=//*[@id="email_create"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220329 19:38:14.453" endtime="20220329 19:38:14.509"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//*[@id="email_create"]</arg>
+<arg>${EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220329 19:38:14.510" level="INFO">Typing text 'Leticiagraziele@gmail.com' into text field 'xpath=//*[@id="email_create"]'.</msg>
+<status status="PASS" starttime="20220329 19:38:14.509" endtime="20220329 19:38:14.661"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>Css=button#SubmitCreate</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220329 19:38:14.662" level="INFO">Clicking element 'Css=button#SubmitCreate'.</msg>
+<status status="PASS" starttime="20220329 19:38:14.662" endtime="20220329 19:38:14.733"/>
+</kw>
+<status status="PASS" starttime="20220329 19:38:14.450" endtime="20220329 19:38:14.734"/>
 </kw>
 <kw name="Imprima a mensagem na tela" library="t-shirts.Steps">
 <kw name="Log To Console" library="BuiltIn">
 <arg>${\n}Legal! Executei meu primeiro teste</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220324 19:54:10.814" endtime="20220324 19:54:10.816"/>
+<status status="PASS" starttime="20220329 19:38:14.736" endtime="20220329 19:38:14.737"/>
 </kw>
-<status status="PASS" starttime="20220324 19:54:10.814" endtime="20220324 19:54:10.817"/>
+<status status="PASS" starttime="20220329 19:38:14.735" endtime="20220329 19:38:14.737"/>
 </kw>
-<status status="PASS" starttime="20220324 19:54:01.168" endtime="20220324 19:54:10.818"/>
+<status status="PASS" starttime="20220329 19:37:59.072" endtime="20220329 19:38:14.738"/>
+</test>
+<test id="s1-t3" name="Cenário: Fazer o cadastro da loja">
+<kw name="Selecionar o Title Mrs" library="t-shirts.Steps">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>css=div#uniform-id_gender2</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220329 19:38:14.742" endtime="20220329 19:38:17.219"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css=div#uniform-id_gender2</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220329 19:38:17.221" level="INFO">Clicking element 'css=div#uniform-id_gender2'.</msg>
+<status status="PASS" starttime="20220329 19:38:17.220" endtime="20220329 19:38:17.288"/>
+</kw>
+<status status="PASS" starttime="20220329 19:38:14.741" endtime="20220329 19:38:17.288"/>
+</kw>
+<kw name="Colocar primeiro nome &quot;Leticia&quot;" library="t-shirts.Steps" sourcename="Colocar primeiro nome &quot;${Primeironome}&quot;">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=customer_firstname</arg>
+<arg>${Primeironome}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220329 19:38:17.290" level="INFO">Typing text 'Leticia' into text field 'id=customer_firstname'.</msg>
+<status status="PASS" starttime="20220329 19:38:17.289" endtime="20220329 19:38:17.432"/>
+</kw>
+<status status="PASS" starttime="20220329 19:38:17.289" endtime="20220329 19:38:17.433"/>
+</kw>
+<kw name="Colocar o ultimo nome &quot;Ferreira&quot;" library="t-shirts.Steps" sourcename="Colocar o ultimo nome &quot;${UltimoNome}&quot;">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>customer_lastname</arg>
+<arg>${UltimoNome}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220329 19:38:17.434" level="INFO">Typing text 'Ferreira' into text field 'customer_lastname'.</msg>
+<status status="PASS" starttime="20220329 19:38:17.434" endtime="20220329 19:38:17.576"/>
+</kw>
+<status status="PASS" starttime="20220329 19:38:17.433" endtime="20220329 19:38:17.577"/>
+</kw>
+<kw name="Criar uma senha &quot;meuteste&quot;" library="t-shirts.Steps" sourcename="Criar uma senha &quot;${Senha}&quot;">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>css=input#passwd.is_required.validate</arg>
+<arg>${Senha}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220329 19:38:17.579" level="INFO">Typing text 'meuteste' into text field 'css=input#passwd.is_required.validate'.</msg>
+<status status="PASS" starttime="20220329 19:38:17.579" endtime="20220329 19:38:17.768"/>
+</kw>
+<status status="PASS" starttime="20220329 19:38:17.578" endtime="20220329 19:38:17.768"/>
+</kw>
+<kw name="Preencher dados de nascimento" library="t-shirts.Steps">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id=uniform-days</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220329 19:38:17.804" level="INFO">Clicking element 'id=uniform-days'.</msg>
+<status status="PASS" starttime="20220329 19:38:17.803" endtime="20220329 19:38:17.973"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>id=uniform-days</arg>
+<arg>15</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20220329 19:38:17.975" level="INFO">Sending key(s) ('15',) to id=uniform-days element.</msg>
+<msg timestamp="20220329 19:38:18.455" level="INFO">Sending keys 15</msg>
+<status status="PASS" starttime="20220329 19:38:17.974" endtime="20220329 19:38:18.476"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id=months</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220329 19:38:18.476" level="INFO">Clicking element 'id=months'.</msg>
+<status status="PASS" starttime="20220329 19:38:18.476" endtime="20220329 19:38:18.581"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>id=months</arg>
+<arg>march</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20220329 19:38:18.583" level="INFO">Sending key(s) ('march',) to id=months element.</msg>
+<msg timestamp="20220329 19:38:18.937" level="INFO">Sending keys march</msg>
+<status status="PASS" starttime="20220329 19:38:18.582" endtime="20220329 19:38:18.973"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id=years</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220329 19:38:18.974" level="INFO">Clicking element 'id=years'.</msg>
+<status status="PASS" starttime="20220329 19:38:18.973" endtime="20220329 19:38:19.189"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>id=years</arg>
+<arg>1991</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20220329 19:38:19.191" level="INFO">Sending key(s) ('1991',) to id=years element.</msg>
+<msg timestamp="20220329 19:38:19.644" level="INFO">Sending keys 1991</msg>
+<status status="PASS" starttime="20220329 19:38:19.190" endtime="20220329 19:38:19.689"/>
+</kw>
+<status status="PASS" starttime="20220329 19:38:17.802" endtime="20220329 19:38:19.689"/>
+</kw>
+<kw name="Preencher dados da empresa &quot;Vem pra TI&quot;" library="t-shirts.Steps" sourcename="Preencher dados da empresa &quot;${empresa}&quot;">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>css=input#company</arg>
+<arg>${empresa}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220329 19:38:19.695" level="INFO">Typing text 'Vem pra TI' into text field 'css=input#company'.</msg>
+<status status="PASS" starttime="20220329 19:38:19.694" endtime="20220329 19:38:19.935"/>
+</kw>
+<status status="PASS" starttime="20220329 19:38:19.693" endtime="20220329 19:38:19.936"/>
+</kw>
+<kw name="Preencher dados do endereço &quot; Adelaide avenue&quot;" library="t-shirts.Steps" sourcename="Preencher dados do endereço &quot;${endereço}&quot;">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>css=input#address1</arg>
+<arg>${endereço}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220329 19:38:19.938" level="INFO">Typing text ' Adelaide avenue' into text field 'css=input#address1'.</msg>
+<status status="PASS" starttime="20220329 19:38:19.937" endtime="20220329 19:38:20.199"/>
+</kw>
+<status status="PASS" starttime="20220329 19:38:19.937" endtime="20220329 19:38:20.199"/>
+</kw>
+<kw name="Prencher estado Alabama" library="t-shirts.Steps">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css=input#city</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220329 19:38:20.203" level="INFO">Clicking element 'css=input#city'.</msg>
+<status status="PASS" starttime="20220329 19:38:20.203" endtime="20220329 19:38:20.310"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>css=input#city</arg>
+<arg>Alabama</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20220329 19:38:20.312" level="INFO">Sending key(s) ('Alabama',) to css=input#city element.</msg>
+<msg timestamp="20220329 19:38:20.630" level="INFO">Sending keys Alabama</msg>
+<status status="PASS" starttime="20220329 19:38:20.310" endtime="20220329 19:38:20.705"/>
+</kw>
+<status status="PASS" starttime="20220329 19:38:20.202" endtime="20220329 19:38:20.705"/>
+</kw>
+<kw name="Preencher estado" library="t-shirts.Steps">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css=div#uniform-id_state</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220329 19:38:20.707" level="INFO">Clicking element 'css=div#uniform-id_state'.</msg>
+<status status="PASS" starttime="20220329 19:38:20.707" endtime="20220329 19:38:20.895"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>css=div#uniform-id_state</arg>
+<arg>Alabama</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20220329 19:38:20.898" level="INFO">Sending key(s) ('Alabama',) to css=div#uniform-id_state element.</msg>
+<msg timestamp="20220329 19:38:21.287" level="INFO">Sending keys Alabama</msg>
+<status status="PASS" starttime="20220329 19:38:20.896" endtime="20220329 19:38:21.333"/>
+</kw>
+<status status="PASS" starttime="20220329 19:38:20.706" endtime="20220329 19:38:21.334"/>
+</kw>
+<kw name="Prencher Zip/Postal Code &quot;00000&quot;" library="t-shirts.Steps" sourcename="Prencher Zip/Postal Code &quot;${cep}&quot;">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>css=input#postcode</arg>
+<arg>${cep}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220329 19:38:21.337" level="INFO">Typing text '00000' into text field 'css=input#postcode'.</msg>
+<status status="PASS" starttime="20220329 19:38:21.336" endtime="20220329 19:38:21.504"/>
+</kw>
+<status status="PASS" starttime="20220329 19:38:21.335" endtime="20220329 19:38:21.504"/>
+</kw>
+<kw name="informação adicional &quot;Portao Azul&quot;" library="t-shirts.Steps" sourcename="informação adicional &quot;${infoadicional}&quot;">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>css=textarea#other</arg>
+<arg>${infoadicional}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220329 19:38:21.506" level="INFO">Typing text 'Portao Azul' into text field 'css=textarea#other'.</msg>
+<status status="PASS" starttime="20220329 19:38:21.505" endtime="20220329 19:38:21.682"/>
+</kw>
+<status status="PASS" starttime="20220329 19:38:21.505" endtime="20220329 19:38:21.682"/>
+</kw>
+<kw name="Preencher telefone &quot;34-3313-2133&quot;" library="t-shirts.Steps" sourcename="Preencher telefone &quot;${fixo}&quot;">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>css=input#phone</arg>
+<arg>${fixo}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220329 19:38:21.685" level="INFO">Typing text '34-3313-2133' into text field 'css=input#phone'.</msg>
+<status status="PASS" starttime="20220329 19:38:21.684" endtime="20220329 19:38:21.851"/>
+</kw>
+<status status="PASS" starttime="20220329 19:38:21.683" endtime="20220329 19:38:21.851"/>
+</kw>
+<kw name="Preencher Celular &quot;34-9888-9899&quot;" library="t-shirts.Steps" sourcename="Preencher Celular &quot;${mobile}&quot;">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>css=input#phone_mobile</arg>
+<arg>${mobile}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220329 19:38:21.853" level="INFO">Typing text '34-9888-9899' into text field 'css=input#phone_mobile'.</msg>
+<status status="PASS" starttime="20220329 19:38:21.852" endtime="20220329 19:38:22.026"/>
+</kw>
+<status status="PASS" starttime="20220329 19:38:21.852" endtime="20220329 19:38:22.026"/>
+</kw>
+<kw name="Preencher ponto de referencia &quot;Proximo ao Shopping&quot;" library="t-shirts.Steps" sourcename="Preencher ponto de referencia &quot;${referencia}&quot;">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>css=input#alias</arg>
+<arg>${referencia}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220329 19:38:22.029" level="INFO">Typing text 'Proximo ao Shopping' into text field 'css=input#alias'.</msg>
+<status status="PASS" starttime="20220329 19:38:22.028" endtime="20220329 19:38:22.221"/>
+</kw>
+<status status="PASS" starttime="20220329 19:38:22.027" endtime="20220329 19:38:22.221"/>
+</kw>
+<kw name="Clicar registrar" library="t-shirts.Steps">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css=div.submit.clearfix</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220329 19:38:22.223" level="INFO">Clicking element 'css=div.submit.clearfix'.</msg>
+<status status="PASS" starttime="20220329 19:38:22.223" endtime="20220329 19:38:22.309"/>
+</kw>
+<status status="PASS" starttime="20220329 19:38:22.222" endtime="20220329 19:38:22.309"/>
+</kw>
+<status status="PASS" starttime="20220329 19:38:14.740" endtime="20220329 19:38:22.309"/>
 </test>
 <doc>Suíte Exemplo mentoria</doc>
-<status status="PASS" starttime="20220324 19:53:48.150" endtime="20220324 19:54:10.821"/>
+<status status="PASS" starttime="20220329 19:37:45.756" endtime="20220329 19:38:22.312"/>
 </suite>
 <statistics>
 <total>
-<stat pass="2" fail="0" skip="0">All Tests</stat>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="2" fail="0" skip="0" id="s1" name="t-shirts.Tests">t-shirts.Tests</stat>
+<stat pass="3" fail="0" skip="0" id="s1" name="t-shirts.Tests">t-shirts.Tests</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20220324 19:53:48.604" level="WARN">Imported resource file 'C:\Users\Leticia\Desktop\QAgil\Mentoria-VemPraTI\mentoria\web\t-shirts\t-shirts.Elements.robot' is empty.</msg>
-<msg timestamp="20220324 19:53:48.608" level="ERROR">Error in file 'C:\Users\Leticia\Desktop\QAgil\Mentoria-VemPraTI\mentoria\web\t-shirts\t-shirts.Steps.robot' on line 3: Error in file 'C:\Users\Leticia\Desktop\QAgil\Mentoria-VemPraTI\mentoria\web\t-shirts\t-shirts.Tests.robot' on line 7: Resource file with 'Test Cases' section is invalid.</msg>
+<msg timestamp="20220329 19:37:46.284" level="WARN">Imported resource file 'C:\Users\Leticia\Desktop\QAgil\Mentoria-VemPraTI\mentoria\web\t-shirts\t-shirts.Elements.robot' is empty.</msg>
+<msg timestamp="20220329 19:37:46.288" level="ERROR">Error in file 'C:\Users\Leticia\Desktop\QAgil\Mentoria-VemPraTI\mentoria\web\t-shirts\t-shirts.Steps.robot' on line 3: Error in file 'C:\Users\Leticia\Desktop\QAgil\Mentoria-VemPraTI\mentoria\web\t-shirts\t-shirts.Tests.robot' on line 7: Resource file with 'Test Cases' section is invalid.</msg>
 </errors>
 </robot>
