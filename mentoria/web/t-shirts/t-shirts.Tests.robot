@@ -3,9 +3,8 @@ Documentation       Suíte Exemplo mentoria
 Resource            ../../resources/commons.robot
 Resource             t-shirts.Steps.robot
 
-
 *** Test Cases ***
-Cenário: Pesquisar um produto 
+Cenário: Pesquisar um produto
     Dado que quero acessar a página home do site da loja
     E digito o produto "blouse" no campo de pesquisa
     Quando clico no botão Pesquisar
