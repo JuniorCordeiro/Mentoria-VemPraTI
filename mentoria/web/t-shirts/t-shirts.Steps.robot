@@ -26,7 +26,7 @@ Clicar em Proceed to checkout
     Click Link      http://automationpractice.com/index.php?controller=order
 
 Clicar na página T-shirts
-    click Element     xpath=//*[@id="block_top_menu"]/ul/li[*]/a[contains(.,'T-shirts')]
+    click Element     ${ABA_T-SHIRTS}
 
 Escolha Faded Short Sleeve T-shirts
     click Element  xpath=//*[@id="center_column"]/ul/li/div/div[2]/h5/a
