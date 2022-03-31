@@ -25,13 +25,9 @@ E coloco no carrinho
 Então Clico em Proceed to checkout
     Click Link      http://automationpractice.com/index.php?controller=order
 
-<<<<<<< HEAD
 Dado que quando clico na página T-shirts
     click Element     xpath=//*[@id="block_top_menu"]/ul/li[*]/a[contains(.,'T-shirts')]
-=======
-Clicar na página T-shirts
-    click Element     ${ABA_T-SHIRTS}
->>>>>>> c780ba318b6b109c6e825fa487f28ebb53a942ba
+
 
 E escolha Faded Short Sleeve T-shirts
     click Element  xpath=//*[@id="center_column"]/ul/li/div/div[2]/h5/a
@@ -101,3 +97,6 @@ E Preencho ponto de referencia "${referencia}"
 
 Então Clico registrar
     click Element   css=div.submit.clearfix
+
+    
+
