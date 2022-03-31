@@ -16,51 +16,53 @@ Quando clico no botão Pesquisar
 Então conferiro se o produto "blouse" foi exibido corretamente
     Wait Until Element Is Visible   css=div.left-block
 
-Clicar na blouse escolhida  
+Dado que Clico na blouse escolhida   
     click Element     css=div.left-block
 
-Colocar no carrinho 
+E coloco no carrinho
     click Element     xpath=//*[@id="add_to_cart"]/button
 
-Clicar em Proceed to checkout
+Então Clico em Proceed to checkout
     Click Link      http://automationpractice.com/index.php?controller=order
 
-Clicar na página T-shirts
+<<<<<<< HEAD
+Dado que quando clico na página T-shirts
     click Element     xpath=//*[@id="block_top_menu"]/ul/li[*]/a[contains(.,'T-shirts')]
+=======
+Clicar na página T-shirts
+    click Element     ${ABA_T-SHIRTS}
+>>>>>>> c780ba318b6b109c6e825fa487f28ebb53a942ba
 
-Escolha Faded Short Sleeve T-shirts
+E escolha Faded Short Sleeve T-shirts
     click Element  xpath=//*[@id="center_column"]/ul/li/div/div[2]/h5/a
 
-Colocar no carrinho blusa 2
+Quando Coloco no carrinho blusa 2
     click Element     xpath=//*[@id="add_to_cart"]/button
 
-Clicar em Proceed to checkout finalizando compra
+Então Clico em Proceed to checkout finalizando compra
     Click Link      http://automationpractice.com/index.php?controller=order
     wait Until Element is Visible       css=a.button.btn.btn-default.standard-checkout.button-medium
     click Element       css=a.button.btn.btn-default.standard-checkout.button-medium
 
-Criar uma conta no site digitando o email "${EMAIL}"
+Dado que preciso criar uma conta no site digitando o email "${EMAIL}"
     wait Until Element is Visible       xpath=//*[@id="email_create"]
     Input Text      xpath=//*[@id="email_create"]        ${EMAIL}
     Click Element   Css=button#SubmitCreate
 
-Imprima a mensagem na tela
-    log to console      ${\n}Legal! Executei meu primeiro teste 
-
-Selecionar o Title Mrs
+E seleciono o Title Mrs 
     wait Until Element is Visible       css=div#uniform-id_gender2
     click element   css=div#uniform-id_gender2
 
-Colocar primeiro nome "${Primeironome}"
+E Coloco o primeiro nome "${Primeironome}"
     Input Text      id=customer_firstname        ${Primeironome}
 
-Colocar o ultimo nome "${UltimoNome}"
+E Coloco o ultimo nome "${UltimoNome}"
     Input Text      customer_lastname       ${UltimoNome}
 
-Criar uma senha "${Senha}"
+E Crio uma senha "${Senha}"
     Input Text     css=input#passwd.is_required.validate      ${Senha}
 
-Preencher dados de nascimento 
+E Preencho dados de nascimento  
     Click Element       id=uniform-days
     Press Keys          id=uniform-days     15
     Click Element       id=months
@@ -68,36 +70,34 @@ Preencher dados de nascimento
     Click Element       id=years
     Press Keys          id=years     1991
 
-Preencher dados da empresa "${empresa}"
+E Preencho dados da empresa "${empresa}"
     Input Text      css=input#company       ${empresa}
 
-Preencher dados do endereço "${endereço}"
+E Preencho dados do endereço "${endereço}"
     Input Text      css=input#address1      ${endereço}
 
-Prencher estado Alabama
+E Preencho estado Alabama
     Click Element       css=input#city   
     Press Keys          css=input#city         Alabama
 
-Preencher estado
+E Preencho estado
     Click Element       css=div#uniform-id_state
     Press Keys          css=div#uniform-id_state     Alabama
 
-Prencher Zip/Postal Code "${cep}"
+E Preencho Zip/Postal Code "${cep}"
     Input Text      css=input#postcode    ${cep}
 
-informação adicional "${infoadicional}"   
+E Preencho informação adicional "${infoadicional}"   
     Input Text      css=textarea#other    ${infoadicional}
 
-Preencher telefone "${fixo}"
+E Preencho telefone "${fixo}"
     Input Text      css=input#phone    ${fixo}
 
-Preencher Celular "${mobile}"
+E Preencho Celular "${mobile}"
     Input Text      css=input#phone_mobile    ${mobile}
 
-Preencher ponto de referencia "${referencia}"
+E Preencho ponto de referencia "${referencia}"
     Input Text      css=input#alias    ${referencia}
 
-Clicar registrar
+Então Clico registrar
     click Element   css=div.submit.clearfix
-
-    
