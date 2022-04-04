@@ -37,7 +37,8 @@ Cenário: Fazer o cadastro da loja
     Preencher Celular "34-9888-9899"
     Preencher ponto de referencia "Proximo ao Shopping"
     Clicar registrar
-
+    teste 01 
+    
 
 
 
