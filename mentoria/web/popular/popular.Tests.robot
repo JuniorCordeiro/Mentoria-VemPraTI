@@ -10,7 +10,7 @@ Cenário: Pesquisar um produto
     Dado que quero acessar a página home do site da loja
     Quando Clico na aba POPULAR
     E Escolho um produto
-   
+    Verifico Se o Produto Apareceu Corretamente
 
     
   
