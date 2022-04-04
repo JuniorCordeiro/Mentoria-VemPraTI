@@ -7,7 +7,9 @@ Resource             popular.Steps.robot
 
 Cenário: Pesquisar um produto
     Dado que quero acessar a página home do site da loja
-    Clicar na aba POPULAR
+    Quando Clico na aba POPULAR
+    E Escolho um produto
+    
     
   
   

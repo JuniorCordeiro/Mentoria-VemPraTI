@@ -7,8 +7,9 @@ Resource        popular.Tests.robot
 Dado que quero acessar a página home do site da loja
     Open Browser        url=${URL}        browser=${BROWSER}
 
-Clicar na aba POPULAR
-l    Click Button       css=ul#homefeatured
+Quando Clico na aba POPULAR
+    Click Element         css=ul#homefeatured
 
-
-
+E Escolho um produto
+    Click Element    xpath=//*[@id="homefeatured"]/li[1]/div/div[1]/div/a[1]/img
+    
