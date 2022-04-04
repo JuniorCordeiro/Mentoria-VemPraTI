@@ -12,4 +12,4 @@ Quando Clico na aba POPULAR
 
 E Escolho um produto
     Click Element    xpath=//*[@id="homefeatured"]/li[1]/div/div[1]/div/a[1]/img
-    
+
