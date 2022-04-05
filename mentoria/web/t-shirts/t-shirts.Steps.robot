@@ -49,8 +49,7 @@ E seleciono o Title Mrs
     wait Until Element is Visible       css=div#uniform-id_gender2
     click element   css=div#uniform-id_gender2
 
-E Coloco o primeiro nome "${Primeironome}"
-    Input Text      id=customer_firstname        ${Primeironome}
+
 
 E Coloco o ultimo nome "${UltimoNome}"
     Input Text      customer_lastname       ${UltimoNome}
