@@ -50,13 +50,6 @@ E seleciono o Title Mrs
     click element   css=div#uniform-id_gender2
 
 
-
-E Coloco o ultimo nome "${UltimoNome}"
-    Input Text      customer_lastname       ${UltimoNome}
-
-E Crio uma senha "${Senha}"
-    Input Text     css=input#passwd.is_required.validate      ${Senha}
-
 E Preencho dados de nascimento  
     Click Element       id=uniform-days
     Press Keys          id=uniform-days     15
@@ -65,13 +58,8 @@ E Preencho dados de nascimento
     Click Element       id=years
     Press Keys          id=years     1991
 
-E Preencho dados da empresa "${empresa}"
-    Input Text      css=input#company       ${empresa}
 
-E Preencho dados do endereço "${endereço}"
-    Input Text      css=input#address1      ${endereço}
-
-E Preencho estado Alabama
+E Preencho City Alabama
     Click Element       css=input#city   
     Press Keys          css=input#city         Alabama
 
@@ -79,22 +67,7 @@ E Preencho estado
     Click Element       css=div#uniform-id_state
     Press Keys          css=div#uniform-id_state     Alabama
 
-E Preencho Zip/Postal Code "${cep}"
-    Input Text      css=input#postcode    ${cep}
 
-E Preencho informação adicional "${infoadicional}"   
-    Input Text      css=textarea#other    ${infoadicional}
 
-E Preencho telefone "${fixo}"
-    Input Text      css=input#phone    ${fixo}
-
-E Preencho Celular "${mobile}"
-    Input Text      css=input#phone_mobile    ${mobile}
-
-E Preencho ponto de referencia "${referencia}"
-    Input Text      css=input#alias    ${referencia}
-
-Então Clico registrar
-    click Element   css=div.submit.clearfix
 
     
