@@ -11,7 +11,7 @@ Cenário: Pesquisar um produto
     Então conferiro se o produto "blouse" foi exibido corretamente
 
 Cenário: Comprar 1 T-shirts e colocar no carrinho
-    Dado que Clico na blouse escolhida 
+    Dado que Clico na blouse escolhida
     E coloco no carrinho
     Então Clico em Proceed to checkout
 
@@ -40,7 +40,6 @@ Cenário: Fazer o cadastro da loja
     Então Clico registrar
 
 
-    
 
 
 
