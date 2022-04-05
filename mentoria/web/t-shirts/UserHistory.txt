@@ -11,3 +11,7 @@ Caso de Teste 01: Pesquisar um produto no site
     Clicar na blouse escolhida 
     Colocar no carrinho 
     Clicar em Proceed to checkout
+
+
+Imprima a mensagem na tela
+    log to console      ${\n}Legal! Executei meu primeiro teste 
