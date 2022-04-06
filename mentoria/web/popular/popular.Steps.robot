@@ -18,5 +18,5 @@ Colocar no carrinho
     Click Element    xpath=//*[@id="add_to_cart"]/button/span
 
 
-         
+
 
