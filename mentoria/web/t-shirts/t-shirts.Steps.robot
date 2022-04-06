@@ -50,15 +50,6 @@ E seleciono o Title Mrs
     click element   css=div#uniform-id_gender2
 
 
-E Preencho dados de nascimento  
-    Click Element       id=uniform-days
-    Press Keys          id=uniform-days     15
-    Click Element       id=months
-    Press Keys          id=months     march
-    Click Element       id=years
-    Press Keys          id=years     1991
-
-
 E Preencho City Alabama
     Click Element       css=input#city   
     Press Keys          css=input#city         Alabama
@@ -71,3 +62,4 @@ E Preencho estado
 
 
     
+
