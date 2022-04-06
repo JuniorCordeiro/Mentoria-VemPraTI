@@ -24,13 +24,13 @@ Cenário: Comprar a 2° blusa
 Cenário: Fazer o cadastro da loja 
     Dado que preciso criar uma conta no site digitando o email "leticia4321@teste.com.br" 
     E seleciono o Title Mrs 
-    E Coloco o primeiro nome "Leticia"
-    E Coloco o ultimo nome "Ferreira"
+    E Preencho o primeiro nome "Leticia"
+    E Preencho o ultimo nome "Ferreira"
     E Crio uma senha "meuteste"
-    E Preencho dados de nascimento 
-    E Preencho dados da empresa "Vem pra TI"
+    E Preencho dados de nascimento    15    March    1991
+    E Preencho nome da empresa "Vem pra TI"
     E Preencho dados do endereço " Adelaide avenue"
-    E Preencho estado Alabama
+    E Preencho City Alabama
     E Preencho estado
     E Preencho Zip/Postal Code "00000"
     E Preencho informação adicional "Portao Azul"
