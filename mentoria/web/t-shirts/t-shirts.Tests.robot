@@ -27,7 +27,7 @@ Cenário: Fazer o cadastro da loja
     E Preencho o primeiro nome "Leticia"
     E Preencho o ultimo nome "Ferreira"
     E Crio uma senha "meuteste"
-    E Preencho dados de nascimento 
+    E Preencho dados de nascimento    15    March    1991
     E Preencho nome da empresa "Vem pra TI"
     E Preencho dados do endereço " Adelaide avenue"
     E Preencho City Alabama

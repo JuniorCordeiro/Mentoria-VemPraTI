@@ -57,3 +57,12 @@ E Preencho ponto de referencia "${referencia}"
 Então Clico registrar
     click Element   ${BTN__FINAL_FORM_REGISTRAR} 
     
+E Preencho dados de nascimento  
+    [Arguments]    ${D_T-DIA}    ${D_T-MES}    ${D_T-ANO}
+    Click Element       id=uniform-days
+    Press Keys          id=uniform-days     ${D_T-DIA}
+    Click Element       id=months
+    Press Keys          id=months     ${D_T-MES}
+    Click Element       id=years
+    Press Keys          id=years     ${D_T-ANO}
+
