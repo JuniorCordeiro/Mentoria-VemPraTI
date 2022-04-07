@@ -40,10 +40,6 @@ Então Clico em Proceed to checkout finalizando compra
     wait Until Element is Visible       css=a.button.btn.btn-default.standard-checkout.button-medium
     click Element       css=a.button.btn.btn-default.standard-checkout.button-medium
 
-Dado que preciso criar uma conta no site digitando o email "${EMAIL}"
-    wait Until Element is Visible       xpath=//*[@id="email_create"]
-    Input Text      xpath=//*[@id="email_create"]        ${EMAIL}
-    Click Element   Css=button#SubmitCreate
 
 E seleciono o Title Mrs 
     wait Until Element is Visible       css=div#uniform-id_gender2
