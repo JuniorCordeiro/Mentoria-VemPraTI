@@ -6,7 +6,7 @@ Resource             popular.Steps.robot
 
 *** Test Cases ***
 
-Cenário: Pesquisar um produto
+Cenário: Pesquisar um produto na aba POPULAR
     Dado que quero acessar a página home do site da loja
     Quando Clico na aba POPULAR
     E Escolho um produto
