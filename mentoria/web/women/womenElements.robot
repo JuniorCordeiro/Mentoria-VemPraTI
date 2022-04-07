@@ -8,7 +8,3 @@ ${BTN_LOGIN}                  SubmitLogin
 
 ${INPUT_Pesquisar}            id=search_query_top
 ${INPUT_Produto}              css=div.left-block
-
-
-
-testes
