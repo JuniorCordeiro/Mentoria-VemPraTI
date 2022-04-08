@@ -6,11 +6,22 @@ Resource             popular.Steps.robot
 
 *** Test Cases ***
 
-Cenário: Pesquisar um produto na aba POPULAR
+Cenário 1: Pesquisar um produto na aba POPULAR
     Dado que quero acessar a página home do site da loja
     Quando Clico na aba POPULAR
-    E Escolho um produto
-    Colocar no carrinho
+    Então conferiro se o produto foi exibido corretamente
+    
+
+    
+
+   
+   
+
+
+   
+    
+
+
      
   
   
