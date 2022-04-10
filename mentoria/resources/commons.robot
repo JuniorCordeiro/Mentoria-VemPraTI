@@ -15,7 +15,7 @@ Digitar o produto "${PRODUTO}" no campo de pesquisa
 Clica no botão Pesquisar
     click Button   name=submit_search
 
-Conferir se o produto "blouse" foi exibido corretamente
+Conferir se o produto "" foi exibido corretamente
     Wait Until Element Is Visible   xpath=//*[@id="center_column"]/ul/li/div/div[1]/div/a[1]/img
 
 Clicar na blouse escolhida  
