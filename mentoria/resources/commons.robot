@@ -7,22 +7,31 @@ ${HEADLESS}                        false
 ${URL}                             http://automationpractice.com/index.php
 ${TIME_TO_WAIT}                    5
 ${BTN_PESQUISAR}                   css=button.btn.btn-default.button-search
+${INPUT_EMAIL}                     name=email_create
 ${INPUT_FIRSTNAME}                 id=customer_firstname  
 ${INPUT_LASTNAME}                  customer_lastname
 ${INPUT_PASSWORD}                  css=input#passwd.is_required.validate
 ${INPUT_NAME_EMPRESA}              css=input#company 
 ${INPUT_ENDEREÇO_EMPRESA}          css=input#address1
+${INPUT_CITY}                      name=city
+${INPUT_STATE}                     name=id_state
 ${INPUT_POSTAL_CODE}               css=input#postcode
 ${INPUT_INFO_ADICIONAL}            css=textarea#other
 ${TELEFONE_FIXO}                   css=input#phone
 ${TELEFONE_MOBILE}                 css=input#phone_mobile
 ${INPUT_REFERENCIA}                css=input#alias
-${BTN__FINAL_FORM_REGISTRAR}       css=div.submit.clearfix 
+${BTN_REGISTRAR}                   css=div.submit.clearfix 
+${BTN_CREATE_ACCOUNT}              id=SubmitCreate
 
 
 
 
 *** Keywords ***
+
+Dado que preencho email para criar conta "${EMAIL}"
+    Wait Until Element is Visible       ${INPUT_EMAIL}       
+    Input Text                          ${INPUT_EMAIL}     ${EMAIL}
+    Click Element                       ${BTN_CREATE_ACCOUNT}
 
 E Preencho o primeiro nome "${Primeironome}"
     Input Text    ${INPUT_FIRSTNAME}          ${Primeironome}
@@ -35,6 +44,13 @@ E Crio uma senha "${Senha}"
 
 E Preencho nome da empresa "${Nomeempresa}"
     Input Text      ${INPUT_NAME_EMPRESA}        ${Nomeempresa}
+
+E Preencho campo "${City}"
+    Input Text        ${INPUT_CITY}       ${City}
+
+E Preencho campo state ${STATE}
+    Click Element     ${INPUT_STATE}
+    Press Keys        ${INPUT_STATE}          ${STATE}
 
 E Preencho dados do endereço "${endereço}"
     Input Text      ${INPUT_ENDEREÇO_EMPRESA}       ${endereço}
@@ -55,7 +71,7 @@ E Preencho ponto de referencia "${referencia}"
     Input Text      ${INPUT_REFERENCIA}    ${referencia}
 
 Então Clico registrar
-    click Element   ${BTN__FINAL_FORM_REGISTRAR} 
+    click Element   ${BTN_REGISTRAR}
     
 E Preencho dados de nascimento  
     [Arguments]    ${D_T-DIA}    ${D_T-MES}    ${D_T-ANO}
