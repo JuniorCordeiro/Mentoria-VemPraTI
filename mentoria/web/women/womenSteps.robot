@@ -11,7 +11,7 @@ Quando acesso botão Sign in realizar cadastro
     Click Element        ${BTN_SIGNIN}
 
 Quando sou redirecionado pagina de cadastro "${TEXT}" 
-    Element Should Contain               ${BTN_CREATEANACCOUNT}        ${TEXT} 
+    Element Should Contain               ${BTN_CREATE_ACCOUNT}        ${TEXT} 
 
 #como inserir no commons criar os dois F e M
 E seleciono opcao title
@@ -44,9 +44,3 @@ Quando acesso aba Women
     
 E quero adicionar um produto no carrinho
 
-Dado que estou logado com a minha conta
-    Dado que quero acessar a página home do site da loja
-    Quando aciono botão SignIn
-    E preencho email para realizar login "edivania2@testes.com.br" 
-    E preencho senha para realizar login "12345"
-    Então aciono botão SignIn realizar login

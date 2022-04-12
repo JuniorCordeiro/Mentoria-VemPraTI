@@ -4,22 +4,21 @@ Resource            ../../resources/commons.robot
 Resource             womenSteps.robot
 
 *** Test Cases ***
-Cenario: Pesquisar produtos - Não logado
+Cenario: Pesquisar produto
     Dado que quero acessar a página home do site da loja
     Quando pesquiso "Blouse"
     E aciono botão Pesquisar
     Então vou conferir se o produto "Blouse" pesquisado é exibido corretamente
 
-Cenario: Pesquisar produtos - Logado
-    Dado que estou logado com a minha conta
-    Quando acesso aba "Women"
-    E pesquiso produto "Blouse"
-    Então vou conferir se o produto pesquisado é exibido corretamente
-
-Cenario: Realizar cadastro na loja
+Cenario: Adicionar produto no carrinho
     Dado que quero acessar a página home do site da loja
-    Quando acesso botão Sign in realizar cadastro
-    E Preencho para criar conta "edivania3@testes.com.br" 
+    Quando pesquiso "Blouse"
+    # E adiciono produto no carrinho
+    # E aciono botão Proceed to checkout
+    # E aciono botão Proceed to checkout para realizar cadastro
+
+Cenario: Realizar cadastro no site da loja
+    Dado que preencho email para criar conta "edivania3@testes.com.br" 
     Quando sou redirecionado pagina de cadastro "Create an account"
     E seleciono opcao title
     E Preencho o primeiro nome "Testes Trem bala"
@@ -43,33 +42,33 @@ Cenario: Efetuar login no site da loja
     E preencho senha para realizar login "12345"
     Então aciono botão SignIn realizar login
 
-Cenario: Adicionar produto no carrinho - Logado
+Cenario: Realizar compra produto com desconto
     Dado que quero acessar a página home do site da loja
     Quando aciono botão SignIn
     E preencho email para realizar login "edivania2@testes.com.br" 
     E preencho senha para realizar login "12345"
     Então aciono botão SignIn realizar login
     Quando acesso aba Women
-    E quero adicionar um produto no carrinho
-    Então verifico se o produto foi adcionado corretamente
+    # E quero adicionar um produto com desconto no carrinho
+    # Então verifico se o produto foi adcionado corretamente
 
 Cenario: Efetuar compra de um produto qualquer - Logado
-    Cenario: Efetuar login no site da loja
-    Quando seleciono um produto ""
-    E adiciono no carrinho
-    E 
+#     Cenario: Efetuar login no site da loja
+#     Quando seleciono um produto ""
+#     E adiciono no carrinho
+#     E 
 
 
-Cenario: Comprar produto que já esteja no carrinho
+# Cenario: Comprar produto que já esteja no carrinho
 
-Cenario: Adicionar mais de dois produtos no carrinho
+# Cenario: Adicionar mais de dois produtos no carrinho
 
-Cenario Comprar produto que tenha desconto
+# Cenario Comprar produto que tenha desconto
 
-Cenario: Adicionar produto que já tenho no carrinho 
+# Cenario: Adicionar produto que já tenho no carrinho 
 
 
-Cenario: Deletar produto que esteja no carrinho
+# Cenario: Deletar produto que esteja no carrinho
 
 
 
