@@ -22,7 +22,7 @@ Cenário: Comprar a 2° blusa
     Então Clico em Proceed to checkout finalizando compra
 
 Cenário: Fazer o cadastro da loja 
-    Dado que preencho email para criar conta "leticia4321@teste.com.br" 
+    Dado que preencho email para criar conta "leticia43215@teste.com.br" 
     E seleciono o Title Mrs 
     E Preencho o primeiro nome "Leticia"
     E Preencho o ultimo nome "Ferreira"
