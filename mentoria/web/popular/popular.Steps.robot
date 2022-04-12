@@ -23,7 +23,11 @@ E Preencho City Alabama
 
 E Preencho estado
     Click Element       css=div#uniform-id_state
-    Press Keys          css=div#uniform-id_state     Alabama  
+    Press Keys          css=div#uniform-id_state     Alabama 
+
+Clico em Home
+    Wait Until Element Is Visible    xpath=//*[@id="center_column"]/ul/li/a
+    Click Element    xpath=//*[@id="center_column"]/ul/li/a   
   
 Quando Clico na aba POPULAR
     Click Element         css=ul#homefeatured
@@ -36,7 +40,11 @@ Escolho a cor Azul
     Click Element          css=a#color_14.color_pick   
 
 Coloco no carrinho
-    
+    Click Element    xpath=//*[@id="add_to_cart"]/button
+
+Então Clico em Proceed to checkout finalizando compra
+    Wait Until Element is Visible       css=a.btn.btn-default.button-medium
+    click Element       css=a.btn.btn-default.button-medium
 
 
 

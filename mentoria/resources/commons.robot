@@ -20,7 +20,7 @@ ${INPUT_INFO_ADICIONAL}            css=textarea#other
 ${TELEFONE_FIXO}                   css=input#phone
 ${TELEFONE_MOBILE}                 css=input#phone_mobile
 ${INPUT_REFERENCIA}                css=input#alias
-${BTN_REGISTRAR}                   css=div.submit.clearfix 
+${BTN_REGISTRAR}                   css=button#submitAccount 
 ${BTN_CREATE_ACCOUNT}              id=SubmitCreate
 
 
