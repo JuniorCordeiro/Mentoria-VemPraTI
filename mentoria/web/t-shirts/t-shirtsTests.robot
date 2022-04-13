@@ -1,7 +1,7 @@
 *** Settings ***
 Documentation       Suíte Exemplo mentoria
 Resource            ../../resources/commons.robot
-Resource             t-shirts.Steps.robot
+Resource             t-shirtsSteps.robot
 
 *** Test Cases ***
 Cenário: Pesquisar um produto

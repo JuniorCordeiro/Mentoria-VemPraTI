@@ -1,7 +1,7 @@
 *** Settings ***
 Documentation        Suite Exemplo Mentoria
 Resource             ../../resources/commons.robot
-Resource             popular.Steps.robot
+Resource             popularSteps.robot
 
 
 *** Test Cases ***
