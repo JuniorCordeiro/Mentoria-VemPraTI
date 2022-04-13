@@ -35,12 +35,12 @@ Cenario: Realizar cadastro no site da loja
     E Preencho ponto de referencia "Proxima ao ponto de testes"
     Então Clico registrar
 
-Cenario: Efetuar login no site da loja
-    Dado que quero acessar a página home do site da loja
-    Quando aciono botão SignIn
-    E preencho email para realizar login "edivania2@testes.com.br" 
-    E preencho senha para realizar login "12345"
-    Então aciono botão SignIn realizar login
+# Cenario: Efetuar login no site da loja
+#     Dado que quero acessar a página home do site da loja
+#     Quando aciono botão SignIn
+#     E preencho email para realizar login "edivania2@testes.com.br" 
+#     E preencho senha para realizar login "12345"
+#     Então aciono botão SignIn realizar login
 
 Cenario: Realizar compra produto com desconto
     Dado que quero acessar a página home do site da loja
