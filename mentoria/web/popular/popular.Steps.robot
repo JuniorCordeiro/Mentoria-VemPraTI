@@ -1,13 +1,13 @@
 *** Settings ***
 
 Resource        popular.Page.robot
-Resource        popular.Tests.robot
+Resource        popular.Tests.robot    
 Library    XML
 
 *** Keywords ***
 
 
-Dado que quero acessar a página home do site da loja
+Dado que quero acessar a página home do site da lojas
     Open Browser        url=${URL}        browser=${BROWSER}  
 
 clico Sign in

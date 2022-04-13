@@ -5,13 +5,10 @@ Resource             popular.Steps.robot
 
 
 *** Test Cases ***
-
-
-
 Cenário1: Fazer o cadastro da loja
-    Dado que quero acessar a página home do site da loja
+    Dado que quero acessar a página home do site da lojas
     clico Sign in
-    Dado que preencho email para criar conta "alves2210@hotmail.com.k" 
+    Dado que preencho email para criar conta "alves2210@hotmail.com.p" 
     E seleciono o Title Mr
     E Preencho o primeiro nome "jose"
     E Preencho o ultimo nome "alves"
