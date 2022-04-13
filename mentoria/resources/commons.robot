@@ -1,5 +1,7 @@
 *** Settings ***
+Documentation     Exemplo de uso da Library Faker
 Library     SeleniumLibrary
+Library     FakerLibrary
 
 *** Variable ***
 ${BROWSER}                         chrome
@@ -22,15 +24,18 @@ ${TELEFONE_MOBILE}                 css=input#phone_mobile
 ${INPUT_REFERENCIA}                css=input#alias
 ${BTN_REGISTRAR}                   css=button#submitAccount
 ${BTN_CREATE_ACCOUNT}              id=SubmitCreate
+${BTN_PROSSEGUIR}                  css=button.button.btn.btn-default.button-medium
+
 
 
 
 
 *** Keywords ***
 
-Dado que preencho email para criar conta "${EMAIL}"
+Dado que preencho email aleatório para criar conta    
+    ${EMAILFAKE}=                FakerLibrary.Email  
     Wait Until Element is Visible       ${INPUT_EMAIL}       
-    Input Text                          ${INPUT_EMAIL}     ${EMAIL}
+    Input Text                          ${INPUT_EMAIL}     ${EMAILFAKE}  
     Click Element                       ${BTN_CREATE_ACCOUNT}
 
 E Preencho o primeiro nome "${Primeironome}"
@@ -69,10 +74,7 @@ E Preencho Celular "${mobile}"
 
 E Preencho ponto de referencia "${referencia}"
     Input Text      ${INPUT_REFERENCIA}    ${referencia}
-
-Então Clico registrar
-    click Element   ${BTN_REGISTRAR}
-    
+  
 E Preencho dados de nascimento  
     [Arguments]    ${D_T-DIA}    ${D_T-MES}    ${D_T-ANO}
     Click Element       id=uniform-days
@@ -82,3 +84,12 @@ E Preencho dados de nascimento
     Click Element       id=years
     Press Keys          id=years     ${D_T-ANO}
 
+E Clico registrar
+    click Element   ${BTN_REGISTRAR}
+ 
+E clico prosseguir
+    Wait Until Element is Visible  ${BTN_PROSSEGUIR}
+    Click Element    ${BTN_PROSSEGUIR}
+    click Element    class=checker
+    Wait Until Element is Visible  ${BTN_PROSSEGUIR}
+    Click Element    ${BTN_PROSSEGUIR}
