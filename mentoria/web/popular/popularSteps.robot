@@ -1,7 +1,7 @@
 *** Settings ***
 
-Resource        popular.Page.robot
-Resource        popular.Tests.robot    
+Resource        popularPage.robot
+Resource        popularTests.robot    
 Library    XML
 
 *** Keywords ***
