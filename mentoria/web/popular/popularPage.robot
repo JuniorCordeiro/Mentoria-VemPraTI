@@ -1,4 +1,4 @@
 *** Settings ***
-Library        SeleniumLibrary
+Resource       popularElements.robot
+Resource       ../../resources/commons.robot
 
-Resource       popularElements.robot         

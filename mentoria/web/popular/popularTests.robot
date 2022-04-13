@@ -6,7 +6,7 @@ Resource             popularSteps.robot
 
 *** Test Cases ***
 Cenário1: Fazer o cadastro da loja
-    Dado que quero acessar a página home do site da lojas
+    Dado que quero acessar a página home do site da loja
     clico Sign in
     Dado que preencho email para criar conta "alves2210@hotmail.com.p" 
     E seleciono o Title Mr
@@ -26,13 +26,16 @@ Cenário1: Fazer o cadastro da loja
     Então Clico registrar
 
 Cenario 2: voltar a pagina incial
+    Dado que quero acessar a página home do site da loja
     Clico em Home
     
 Cenário 3: Pesquisar um produto na aba POPULAR
+    Dado que quero acessar a página home do site da loja
     Quando Clico na aba POPULAR
     Escolho um produto
     Escolho a cor Azul
     
 Cenario 4: colocar no carrinho e finalizar Comprar
+    Dado que quero acessar a página home do site da loja
     Coloco no carrinho
     Então Clico em Proceed to checkout finalizando compra

@@ -1,13 +1,8 @@
 *** Settings ***
-
 Resource        popularPage.robot
-Resource        popularTests.robot    
-Library    XML
 
 *** Keywords ***
-
-
-Dado que quero acessar a página home do site da lojas
+Dado que quero acessar a página home do site da loja
     Open Browser        url=${URL}        browser=${BROWSER}  
 
 clico Sign in
@@ -40,7 +35,8 @@ Escolho a cor Azul
     Click Element          css=a#color_14.color_pick   
 
 Coloco no carrinho
-    Click Element    xpath=//*[@id="add_to_cart"]/button
+    Sleep    3
+    Click Element    xpath=//*[@title="Add to cart" and contains(@data-id-product, '1')]
 
 Então Clico em Proceed to checkout finalizando compra
     Wait Until Element is Visible       css=a.btn.btn-default.button-medium
