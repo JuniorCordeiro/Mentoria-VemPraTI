@@ -22,7 +22,7 @@ Cenário: Comprar a 2° blusa
     Então Clico em Proceed to checkout finalizando compra
 
 Cenário: Fazer o cadastro da loja 
-    Dado que preencho email para criar conta "leticia43215@teste.com.br" 
+    Dado que preencho email aleatório para criar conta 
     E seleciono o Title Mrs 
     E Preencho o primeiro nome "Leticia"
     E Preencho o ultimo nome "Ferreira"
@@ -37,7 +37,13 @@ Cenário: Fazer o cadastro da loja
     E Preencho telefone "34-3313-2133"
     E Preencho Celular "34-9888-9899"
     E Preencho ponto de referencia "Proximo ao Shopping"
-    Então Clico registrar
+    E Clico registrar
+    E clico prosseguir
+
+Cenário: Finalizar com o pagamento do produto
+    E preencho os dados de pagamento
+    Então finalizo a compra 
+
 
 
 
