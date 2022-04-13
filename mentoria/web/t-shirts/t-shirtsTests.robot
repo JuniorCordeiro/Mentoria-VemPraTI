@@ -1,7 +1,7 @@
 *** Settings ***
 Documentation       Suíte Exemplo mentoria
 Resource            ../../resources/commons.robot
-Resource             t-shirts.Steps.robot
+Resource             t-shirtsSteps.robot
 
 *** Test Cases ***
 Cenário: Pesquisar um produto
@@ -38,6 +38,8 @@ Cenário: Fazer o cadastro da loja
     E Preencho Celular "34-9888-9899"
     E Preencho ponto de referencia "Proximo ao Shopping"
     Então Clico registrar
+
+
 
 
 

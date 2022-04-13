@@ -1,6 +1,6 @@
 *** Settings ***
 Library     SeleniumLibrary
 
-Resource    t-shirts.Elements.robot
+Resource    t-shirtsElements.robot
 
 
