@@ -36,11 +36,11 @@ Escolho a cor Azul
 
 Coloco no carrinho
     Sleep    3
-    Click Element    xpath=//*[@title="Add to cart" and contains(@data-id-product, '1')]
+    Click Element    xpath=//*[@id="add_to_cart"]/button
 
 Então Clico em Proceed to checkout finalizando compra
-    Wait Until Element is Visible       css=a.btn.btn-default.button-medium
-    click Element       css=a.btn.btn-default.button-medium
+    Wait Until Element is Visible       css=a.button.btn.btn-default.standard-checkout
+    click Element       css=a.button.btn.btn-default.standard-checkout
 
 
 

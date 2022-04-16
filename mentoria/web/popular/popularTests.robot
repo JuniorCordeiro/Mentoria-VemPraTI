@@ -8,7 +8,7 @@ Resource             popularSteps.robot
 Cenário1: Fazer o cadastro da loja
     Dado que quero acessar a página home do site da loja
     clico Sign in
-    Dado que preencho email para criar conta "alves2210@hotmail.com.p" 
+    Dado que preencho email aleatório para criar conta
     E seleciono o Title Mr
     E Preencho o primeiro nome "jose"
     E Preencho o ultimo nome "alves"
@@ -23,7 +23,7 @@ Cenário1: Fazer o cadastro da loja
     E Preencho telefone "82-3313-2133"
     E Preencho Celular "82-9888-9899"
     E Preencho ponto de referencia "Em frente a escola"
-    Então Clico registrar
+    E Clico registrar
 
 Cenario 2: voltar a pagina incial
     Dado que quero acessar a página home do site da loja
@@ -34,7 +34,7 @@ Cenário 3: Pesquisar um produto na aba POPULAR
     Quando Clico na aba POPULAR
     Escolho um produto
     Escolho a cor Azul
-    
+   
 Cenario 4: colocar no carrinho e finalizar Comprar
     Dado que quero acessar a página home do site da loja
     Coloco no carrinho
