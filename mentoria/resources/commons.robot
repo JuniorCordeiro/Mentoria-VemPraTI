@@ -26,12 +26,8 @@ ${BTN_CREATE_ACCOUNT}              id=SubmitCreate
 
 
 
-<<<<<<< HEAD
 Conferir se o produto "" foi exibido corretamente
     Wait Until Element Is Visible   xpath=//*[@id="center_column"]/ul/li/div/div[1]/div/a[1]/img
-=======
-*** Keywords ***
->>>>>>> 33848d9862f01441453cf749c6a47b4e8c90fa21
 
 Dado que preencho email para criar conta "${EMAIL}"
     Wait Until Element is Visible       ${INPUT_EMAIL}       

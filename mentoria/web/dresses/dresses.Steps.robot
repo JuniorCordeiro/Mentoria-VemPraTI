@@ -45,7 +45,8 @@ E seleciono o Title Mr
     wait Until Element is Visible       css=div#uniform-id_gender2
     click element   css=div#uniform-id_gender2
 
-E Preencho o primeiro nome ""
+E Preencho o primeiro nome "${INPUT_FIRSTNAME}"
+
 
 E Preencho City Alabama
     Click Element       css=input#city   
