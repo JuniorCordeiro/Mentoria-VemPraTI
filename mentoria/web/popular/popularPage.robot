@@ -1,4 +1,6 @@
 *** Settings ***
-Resource       popularElements.robot
-Resource       ../../resources/commons.robot
+Library         SeleniumLibrary
+Library         FakerLibrary
+Resource        popularElements.robot
+Resource        ../../resources/commons.robot
 

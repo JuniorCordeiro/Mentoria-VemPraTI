@@ -1,5 +1,6 @@
 *** Settings ***
 Resource        popularPage.robot
+Resource        popularTests.robot
 
 *** Keywords ***
 Dado que quero acessar a página home do site da loja
