@@ -44,6 +44,8 @@ Cenário: Fazer o cadastro da loja
 Cenário: Finalizar com o pagamento do produto
     E preencho os dados de pagamento
     Então finalizo a compra 
+    Fecho a pagina
+
 
 
 
