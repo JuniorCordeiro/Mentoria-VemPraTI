@@ -1,7 +1,7 @@
 *** Settings ***
 Documentation       Suíte Exemplo mentoria
 Resource            ../../resources/commons.robot
-Resource             t-shirts.Steps.robot
+Resource             t-shirtsSteps.robot
 
 *** Test Cases ***
 Cenário: Pesquisar um produto
@@ -13,7 +13,8 @@ Cenário: Pesquisar um produto
 Cenário: Comprar 1 T-shirts e colocar no carrinho
     Dado que Clico na blouse escolhida
     E coloco no carrinho
-    Então Clico em Proceed to checkout
+    Então Clico em Proceed to checkout 
+    #na linha 16 encontrei um bug, onde o primeiro produto nao fica no carrinho
 
 Cenário: Comprar a 2° blusa 
     Dado que quando clico na página T-shirts
@@ -22,7 +23,7 @@ Cenário: Comprar a 2° blusa
     Então Clico em Proceed to checkout finalizando compra
 
 Cenário: Fazer o cadastro da loja 
-    Dado que preencho email para criar conta "leticia4321@teste.com.br" 
+    Dado que preencho email aleatório para criar conta 
     E seleciono o Title Mrs 
     E Preencho o primeiro nome "Leticia"
     E Preencho o ultimo nome "Ferreira"
@@ -37,7 +38,17 @@ Cenário: Fazer o cadastro da loja
     E Preencho telefone "34-3313-2133"
     E Preencho Celular "34-9888-9899"
     E Preencho ponto de referencia "Proximo ao Shopping"
-    Então Clico registrar
+    E Clico registrar
+    E clico prosseguir
+
+Cenário: Finalizar com o pagamento do produto
+    E preencho os dados de pagamento
+    Então finalizo a compra 
+    Fecho a pagina
+
+
+
+
 
 
 
