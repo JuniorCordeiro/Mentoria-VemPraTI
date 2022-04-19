@@ -23,8 +23,7 @@ E coloco no carrinho
     click Element     xpath=//*[@id="add_to_cart"]/button
 
 Então Clico em Proceed to checkout
-    Click Link      css=#layer_cart > div.clearfix > div.layer_cart_cart.col-xs-12.col-md-6 > div.button-container > a > span
-
+    Click Link      class=icon-chevron-right right
 Dado que quando clico na página dresses
     click Element    class=sf-with-ul
 
@@ -33,7 +32,7 @@ E escolha Printed Chiffon Dress
     click Element      xpath=//*[@id="center_column"]/ul/li[5]/div/div[2]/div[2]/a[1]/span
 
 Quando Coloco no carrinho o dresses 2
-    click Element     xpath=//*[@id="add_to_cart"]/button
+    click Element     css=#add_to_cart > button > span
 
 Então Clico em Proceed to checkout finalizando compra
     Click Link      http://automationpractice.com/index.php?controller=order
