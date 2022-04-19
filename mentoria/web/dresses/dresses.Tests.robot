@@ -27,8 +27,9 @@ Cenário: Fazer o cadastro da loja
     E Preencho o primeiro nome "Miguel"
     E Preencho o ultimo nome "Sousa"
     E Crio uma senha "@Portugal2"
-    E Preencho dados de nascimento    23    Agosto    1993
+    E Preencho dados de nascimento    23     Augusto    1993
     E Preencho nome da empresa "Vem pra TI"
+    E Preencho o último nome da empresa "2022"
     E Preencho dados do endereço " Adelaide avenue"
     E Preencho City Boston
     E Preencho estado Massachussets
