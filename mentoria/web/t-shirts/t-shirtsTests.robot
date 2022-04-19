@@ -13,7 +13,8 @@ Cenário: Pesquisar um produto
 Cenário: Comprar 1 T-shirts e colocar no carrinho
     Dado que Clico na blouse escolhida
     E coloco no carrinho
-    Então Clico em Proceed to checkout
+    Então Clico em Proceed to checkout 
+    #na linha 16 encontrei um bug, onde o primeiro produto nao fica no carrinho
 
 Cenário: Comprar a 2° blusa 
     Dado que quando clico na página T-shirts
