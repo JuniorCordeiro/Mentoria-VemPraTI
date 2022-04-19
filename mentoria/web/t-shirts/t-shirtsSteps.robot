@@ -1,6 +1,6 @@
 *** Settings ***
-Resource        t-shirts.Page.robot
-Resource        t-shirts.Tests.robot
+Resource        t-shirtsPage.robot
+Resource        t-shirtsTests.robot
 
 
 *** Keywords ***  
@@ -54,7 +54,8 @@ E Preencho estado
     Click Element       css=div#uniform-id_state
     Press Keys          css=div#uniform-id_state     Alabama
 
+E preencho os dados de pagamento
+    Click Element    class=bankwire    
 
-
-
-    
+Então finalizo a compra
+    Click Element    ${BTN_PROSSEGUIR}
