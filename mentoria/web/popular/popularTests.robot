@@ -1,10 +1,10 @@
 *** Settings ***
-Documentation        Suite Exemplo Mentoria
 Resource             ../../resources/commons.robot
 Resource             popularSteps.robot
 
 
 *** Test Cases ***
+
 Cenário1: Fazer o cadastro da loja
     Dado que quero acessar a página home do site da loja
     clico Sign in
