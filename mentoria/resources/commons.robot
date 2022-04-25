@@ -26,12 +26,7 @@ ${BTN_REGISTRAR}                   css=button#submitAccount
 ${BTN_CREATE_ACCOUNT}              id=SubmitCreate
 ${BTN_PROSSEGUIR}                  css=button.button.btn.btn-default.button-medium
 
-
-
-
-
-Conferir se o produto "" foi exibido corretamente
-    Wait Until Element Is Visible   xpath=//*[@id="center_column"]/ul/li/div/div[1]/div/a[1]/img
+*** Keywords ***
 
 Dado que preencho email aleatório para criar conta    
     ${EMAILFAKE}=                FakerLibrary.Email  
