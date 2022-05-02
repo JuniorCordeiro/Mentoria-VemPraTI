@@ -3,14 +3,19 @@ Documentation       Suíte Exemplo mentoria
 Resource            ../../resources/commons.robot
 Resource             t-shirtsSteps.robot
 
+Suite Setup            Dado que quero acessar a página home do site da loja
+Test Setup             Dado que estou na aba T-Shirts                        
+Test Teardown          Capture Page Screenshot
+Suite Teardown         Fecho a pagina
+
 *** Test Cases ***
 Cenário: Pesquisar um produto
-    Dado que quero acessar a página home do site da loja
     E digito o produto "blouse" no campo de pesquisa
     Quando clico no botão Pesquisar
     Então conferiro se o produto "blouse" foi exibido corretamente
 
 Cenário: Comprar 1 T-shirts e colocar no carrinho
+    [Setup]            Dado que estou na Home
     Dado que Clico na blouse escolhida
     E coloco no carrinho
     Então Clico em Proceed to checkout 

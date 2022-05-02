@@ -26,6 +26,13 @@ ${BTN_REGISTRAR}                   css=button#submitAccount
 ${BTN_CREATE_ACCOUNT}              id=SubmitCreate
 ${BTN_PROSSEGUIR}                  css=button.button.btn.btn-default.button-medium
 
+<<<<<<< HEAD
+=======
+
+
+
+
+>>>>>>> a50d065146819b0d2b058ead230ee1252a2bbcac
 *** Keywords ***
 
 Dado que preencho email aleatório para criar conta    
