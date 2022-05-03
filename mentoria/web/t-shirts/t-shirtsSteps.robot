@@ -2,10 +2,15 @@
 Resource        t-shirtsPage.robot
 Resource        t-shirtsTests.robot
 
-
 *** Keywords ***  
 Dado que quero acessar a página home do site da loja
-    Open Browser    url=${URL}      browser=${BROWSER} 
+    Open Browser    url=${URL}      browser=${BROWSER}
+
+Dado que estou na aba T-Shirts
+    No Operation
+
+Dado que estou na Home
+    Click Button    Home
 
 E digito o produto "${PRODUTO}" no campo de pesquisa 
     Input Text        id=search_query_top     ${PRODUTO}
@@ -47,12 +52,13 @@ E seleciono o Title Mrs
 
 
 E Preencho City Alabama
-    Click Element       css=input#city   
-    Press Keys          css=input#city         Alabama
+    seleciono campo CIDADE/UF    ${CAMPO_CIDADE}     ${TXT_ALABAMA}
 
-E Preencho estado
-    Click Element       css=div#uniform-id_state
-    Press Keys          css=div#uniform-id_state     Alabama
+E Preencho estado valido
+    seleciono campo CIDADE/UF    ${CAMPO_UF}     ${TXT_CIDADE}         
+
+E Preencho estado invalido
+    seleciono campo CIDADE/UF    ${CAMPO_UF}     ${TXT_CIDADE_INVAL}         
 
 E preencho os dados de pagamento
     Click Element    class=bankwire    
