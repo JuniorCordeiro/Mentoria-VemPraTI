@@ -4,7 +4,7 @@ Library     SeleniumLibrary
 Library     FakerLibrary
 
 *** Variable ***
-${BROWSER}                         chrome
+${BROWSER}                         firefox
 ${HEADLESS}                        false  
 ${URL}                             http://automationpractice.com/index.php
 ${TIME_TO_WAIT}                    5

@@ -1,4 +1,5 @@
 *** Settings ***
-Library     SeleniumLibrary
+Library        SeleniumLibrary
+Library        FakerLibrary        
 
-Resource    womenElements.robot
+Resource        womenElements.robot

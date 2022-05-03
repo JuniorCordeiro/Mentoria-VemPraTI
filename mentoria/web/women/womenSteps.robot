@@ -18,6 +18,10 @@ E seleciono opcao title
     Wait Until Element is Visible        ${CMB_TITLE} 
     Click Element                        ${CMB_TITLE}
 
+#inserir na commos realizando cadastro direto
+Então aciono botão registrar
+    Click Element                        ${BTN_REGISTRAR}
+
 Quando pesquiso "${Produto}"
     Input Text        ${INPUT_Pesquisar}     ${Produto}                   
 
