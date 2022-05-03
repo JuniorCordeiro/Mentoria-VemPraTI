@@ -93,3 +93,6 @@ E clico prosseguir
     click Element    class=checker
     Wait Until Element is Visible  ${BTN_PROSSEGUIR}
     Click Element    ${BTN_PROSSEGUIR}
+
+Fecho a pagina
+    Close Browser     
